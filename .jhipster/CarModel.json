@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "carMake",
+            "otherEntityName": "carMake",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160905180158",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "car_model",
+    "pagination": "infinite-scroll"
+}

@@ -1,0 +1,23 @@
+{
+    "ccmApp": {
+        "carModelGeneration" : {
+            "home": {
+                "title": "Car Model Generations",
+                "createLabel": "Dodaj Car Model Generation",
+                "createOrEditLabel": "Dodaj lub edytuj: Car Model Generation",
+                "search": "Search for Car Model Generation"
+            },
+            "created": "A new Car Model Generation is created with identifier {{ param }}",
+            "updated": "A Car Model Generation is updated with identifier {{ param }}",
+            "deleted": "A Car Model Generation is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Car Model Generation {{ id }}?"
+            },
+            "detail": {
+                "title": "Car Model Generation"
+            },
+            "name": "Name",
+            "carModel": "Car Model"
+        }
+    }
+}

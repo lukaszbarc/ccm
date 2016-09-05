@@ -9,6 +9,8 @@
                 "main": "Encje",
                 "carMake": "Car Make",
                 "carConcern": "Car Concern",
+                "carModel": "Car Model",
+                "carModelGeneration": "Car Model Generation",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

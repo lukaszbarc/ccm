@@ -1,0 +1,27 @@
+
+<div>
+    <h2><span translate="ccmApp.carModelGeneration.detail.title">Car Model Generation</span> {{vm.carModelGeneration.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="ccmApp.carModelGeneration.name">Name</span></dt>
+        <dd>
+            <span>{{vm.carModelGeneration.name}}</span>
+        </dd>
+        <dt><span translate="ccmApp.carModelGeneration.carModel">Car Model</span></dt>
+        <dd>
+            <a ui-sref="car-model-detail({id:vm.carModelGeneration.carModel.id})">{{vm.carModelGeneration.carModel.name}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="car-model-generation-detail.edit({id:vm.carModelGeneration.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
