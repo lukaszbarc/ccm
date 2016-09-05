@@ -1,0 +1,23 @@
+
+<div>
+    <h2><span translate="ccmApp.carConcern.detail.title">Car Concern</span> {{vm.carConcern.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="ccmApp.carConcern.name">Name</span></dt>
+        <dd>
+            <span>{{vm.carConcern.name}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="car-concern-detail.edit({id:vm.carConcern.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

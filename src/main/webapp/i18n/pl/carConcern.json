@@ -1,0 +1,22 @@
+{
+    "ccmApp": {
+        "carConcern" : {
+            "home": {
+                "title": "Car Concerns",
+                "createLabel": "Dodaj Car Concern",
+                "createOrEditLabel": "Dodaj lub edytuj: Car Concern",
+                "search": "Search for Car Concern"
+            },
+            "created": "A new Car Concern is created with identifier {{ param }}",
+            "updated": "A Car Concern is updated with identifier {{ param }}",
+            "deleted": "A Car Concern is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Car Concern {{ id }}?"
+            },
+            "detail": {
+                "title": "Car Concern"
+            },
+            "name": "Name"
+        }
+    }
+}
