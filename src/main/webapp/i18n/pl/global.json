@@ -12,6 +12,7 @@
                 "carModel": "Car Model",
                 "carModelGeneration": "Car Model Generation",
                 "car": "Car",
+                "refueling": "Refueling",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

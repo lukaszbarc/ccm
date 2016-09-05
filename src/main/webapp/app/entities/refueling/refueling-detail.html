@@ -1,0 +1,51 @@
+
+<div>
+    <h2><span translate="ccmApp.refueling.detail.title">Refueling</span> {{vm.refueling.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="ccmApp.refueling.date">Date</span></dt>
+        <dd>
+            <span>{{vm.refueling.date | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.milage">Milage</span></dt>
+        <dd>
+            <span>{{vm.refueling.milage}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.trip">Trip</span></dt>
+        <dd>
+            <span>{{vm.refueling.trip}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.quantity">Quantity</span></dt>
+        <dd>
+            <span>{{vm.refueling.quantity}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.cost">Cost</span></dt>
+        <dd>
+            <span>{{vm.refueling.cost}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.comment">Comment</span></dt>
+        <dd>
+            <span>{{vm.refueling.comment}}</span>
+        </dd>
+        <dt><span translate="ccmApp.refueling.user">User</span></dt>
+        <dd>
+            {{vm.refueling.user.login}}
+        </dd>
+        <dt><span translate="ccmApp.refueling.car">Car</span></dt>
+        <dd>
+            <a ui-sref="car-detail({id:vm.refueling.car.id})">{{vm.refueling.car.name}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="refueling-detail.edit({id:vm.refueling.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

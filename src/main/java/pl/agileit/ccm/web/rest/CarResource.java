@@ -1,6 +1,7 @@
 package pl.agileit.ccm.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import org.springframework.security.access.annotation.Secured;
 import pl.agileit.ccm.domain.Car;
 import pl.agileit.ccm.service.CarService;
 import pl.agileit.ccm.web.rest.util.HeaderUtil;
@@ -29,7 +30,7 @@ import java.util.Optional;
 public class CarResource {
 
     private final Logger log = LoggerFactory.getLogger(CarResource.class);
-        
+
     @Inject
     private CarService carService;
 

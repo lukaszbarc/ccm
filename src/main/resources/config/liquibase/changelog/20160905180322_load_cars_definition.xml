@@ -27,6 +27,17 @@
                   separator=";"
                   tableName="car_model_generation">
         </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/cars.csv"
+                  separator=";"
+                  tableName="car">
+        </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/refueling.csv"
+                  separator=";"
+                  tableName="refueling">
+        </loadData>
+
 
     </changeSet>
 </databaseChangeLog>

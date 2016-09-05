@@ -1,0 +1,29 @@
+{
+    "ccmApp": {
+        "refueling" : {
+            "home": {
+                "title": "Refuelings",
+                "createLabel": "Dodaj Refueling",
+                "createOrEditLabel": "Dodaj lub edytuj: Refueling",
+                "search": "Search for Refueling"
+            },
+            "created": "A new Refueling is created with identifier {{ param }}",
+            "updated": "A Refueling is updated with identifier {{ param }}",
+            "deleted": "A Refueling is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Refueling {{ id }}?"
+            },
+            "detail": {
+                "title": "Refueling"
+            },
+            "date": "Date",
+            "milage": "Milage",
+            "trip": "Trip",
+            "quantity": "Quantity",
+            "cost": "Cost",
+            "comment": "Comment",
+            "user": "User",
+            "car": "Car"
+        }
+    }
+}
