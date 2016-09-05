@@ -5,9 +5,9 @@
         .module('ccmApp')
         .controller('CarDetailController', CarDetailController);
 
-    CarDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Car', 'CarConcern', 'CarMake', 'CarModel', 'CarModelGeneration'];
+    CarDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Car', 'CarConcern', 'CarMake', 'CarModel', 'CarModelGeneration', 'User'];
 
-    function CarDetailController($scope, $rootScope, $stateParams, previousState, entity, Car, CarConcern, CarMake, CarModel, CarModelGeneration) {
+    function CarDetailController($scope, $rootScope, $stateParams, previousState, entity, Car, CarConcern, CarMake, CarModel, CarModelGeneration, User) {
         var vm = this;
 
         vm.car = entity;

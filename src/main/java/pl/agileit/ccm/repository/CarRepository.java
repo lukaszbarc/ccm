@@ -12,4 +12,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface CarRepository extends JpaRepository<Car,Long> {
 
+    @Query("select car from Car car where car.owner.login = ?#{principal.username}")
+    List<Car> findByOwnerIsCurrentUser();
+
 }

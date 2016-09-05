@@ -32,5 +32,11 @@
                                  referencedColumnNames="id"
                                  referencedTableName="car_model_generation"/>
 
+        <addForeignKeyConstraint baseColumnNames="owner_id"
+                                 baseTableName="car"
+                                 constraintName="fk_car_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
     </changeSet>
 </databaseChangeLog>

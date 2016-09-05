@@ -20,7 +20,8 @@
             "carConcern": "Car Concern",
             "carMake": "Car Make",
             "carModel": "Car Model",
-            "carModelGeneration": "Car Model Generation"
+            "carModelGeneration": "Car Model Generation",
+            "owner": "Owner"
         }
     }
 }

@@ -24,6 +24,7 @@
                     <th jh-sort-by="carMake.name"><span translate="ccmApp.car.carMake">Car Make</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th jh-sort-by="carModel.name"><span translate="ccmApp.car.carModel">Car Model</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th jh-sort-by="carModelGeneration.name"><span translate="ccmApp.car.carModelGeneration">Car Model Generation</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="owner.login"><span translate="ccmApp.car.owner">Owner</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -42,6 +43,9 @@
                     </td>
                     <td>
                         <a ui-sref="car-model-generation-detail({id:car.carModelGeneration.id})">{{car.carModelGeneration.name}}</a>
+                    </td>
+                    <td>
+                        {{car.owner.login}}
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

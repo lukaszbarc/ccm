@@ -36,6 +36,9 @@ public class Car implements Serializable {
     @ManyToOne
     private CarModelGeneration carModelGeneration;
 
+    @ManyToOne
+    private User owner;
+
     public Long getId() {
         return id;
     }
@@ -107,6 +110,19 @@ public class Car implements Serializable {
 
     public void setCarModelGeneration(CarModelGeneration carModelGeneration) {
         this.carModelGeneration = carModelGeneration;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public Car owner(User user) {
+        this.owner = user;
+        return this;
+    }
+
+    public void setOwner(User user) {
+        this.owner = user;
     }
 
     @Override

@@ -5,9 +5,9 @@
         .module('ccmApp')
         .controller('CarDialogController', CarDialogController);
 
-    CarDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Car', 'CarConcern', 'CarMake', 'CarModel', 'CarModelGeneration'];
+    CarDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Car', 'CarConcern', 'CarMake', 'CarModel', 'CarModelGeneration', 'User'];
 
-    function CarDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Car, CarConcern, CarMake, CarModel, CarModelGeneration) {
+    function CarDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Car, CarConcern, CarMake, CarModel, CarModelGeneration, User) {
         var vm = this;
 
         vm.car = entity;
@@ -17,6 +17,7 @@
         vm.carmakes = CarMake.query();
         vm.carmodels = CarModel.query();
         vm.carmodelgenerations = CarModelGeneration.query();
+        vm.users = User.query();
 
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();

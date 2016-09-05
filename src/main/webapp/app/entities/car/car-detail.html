@@ -24,6 +24,10 @@
         <dd>
             <a ui-sref="car-model-generation-detail({id:vm.car.carModelGeneration.id})">{{vm.car.carModelGeneration.name}}</a>
         </dd>
+        <dt><span translate="ccmApp.car.owner">Owner</span></dt>
+        <dd>
+            {{vm.car.owner.login}}
+        </dd>
     </dl>
 
     <button type="submit"

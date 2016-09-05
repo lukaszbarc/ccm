@@ -4,7 +4,7 @@ describe('Controller Tests', function() {
 
     describe('Car Management Detail Controller', function() {
         var $scope, $rootScope;
-        var MockEntity, MockPreviousState, MockCar, MockCarConcern, MockCarMake, MockCarModel, MockCarModelGeneration;
+        var MockEntity, MockPreviousState, MockCar, MockCarConcern, MockCarMake, MockCarModel, MockCarModelGeneration, MockUser;
         var createController;
 
         beforeEach(inject(function($injector) {
@@ -17,6 +17,7 @@ describe('Controller Tests', function() {
             MockCarMake = jasmine.createSpy('MockCarMake');
             MockCarModel = jasmine.createSpy('MockCarModel');
             MockCarModelGeneration = jasmine.createSpy('MockCarModelGeneration');
+            MockUser = jasmine.createSpy('MockUser');
             
 
             var locals = {
@@ -28,7 +29,8 @@ describe('Controller Tests', function() {
                 'CarConcern': MockCarConcern,
                 'CarMake': MockCarMake,
                 'CarModel': MockCarModel,
-                'CarModelGeneration': MockCarModelGeneration
+                'CarModelGeneration': MockCarModelGeneration,
+                'User': MockUser
             };
             createController = function() {
                 $injector.get('$controller')("CarDetailController", locals);
