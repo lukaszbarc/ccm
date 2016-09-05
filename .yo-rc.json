@@ -1,0 +1,31 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.6.1",
+    "baseName": "ccm",
+    "packageName": "pl.agileit.ccm",
+    "packageFolder": "pl/agileit/ccm",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "jwtSecretKey": "a715fc3d405dcbe36bdd1f37ccb14b10b87fe65c",
+    "useSass": false,
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "pl",
+    "languages": [
+      "pl"
+    ]
+  }
+}
