@@ -1,0 +1,23 @@
+{
+    "ccmApp": {
+        "carMake" : {
+            "home": {
+                "title": "Car Makes",
+                "createLabel": "Dodaj Car Make",
+                "createOrEditLabel": "Dodaj lub edytuj: Car Make",
+                "search": "Search for Car Make"
+            },
+            "created": "A new Car Make is created with identifier {{ param }}",
+            "updated": "A Car Make is updated with identifier {{ param }}",
+            "deleted": "A Car Make is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Car Make {{ id }}?"
+            },
+            "detail": {
+                "title": "Car Make"
+            },
+            "name": "Name",
+            "carConcern": "Car Concern"
+        }
+    }
+}
