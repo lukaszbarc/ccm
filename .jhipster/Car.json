@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "carConcern",
+            "otherEntityName": "carConcern",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [],
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "carMake",
+            "otherEntityName": "carMake",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "carModel",
+            "otherEntityName": "carModel",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "carModelGeneration",
+            "otherEntityName": "carModelGeneration",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160905183110",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "car",
+    "pagination": "infinite-scroll"
+}

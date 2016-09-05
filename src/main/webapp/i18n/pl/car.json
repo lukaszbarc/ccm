@@ -1,0 +1,26 @@
+{
+    "ccmApp": {
+        "car" : {
+            "home": {
+                "title": "Cars",
+                "createLabel": "Dodaj Car",
+                "createOrEditLabel": "Dodaj lub edytuj: Car",
+                "search": "Search for Car"
+            },
+            "created": "A new Car is created with identifier {{ param }}",
+            "updated": "A Car is updated with identifier {{ param }}",
+            "deleted": "A Car is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Car {{ id }}?"
+            },
+            "detail": {
+                "title": "Car"
+            },
+            "name": "Name",
+            "carConcern": "Car Concern",
+            "carMake": "Car Make",
+            "carModel": "Car Model",
+            "carModelGeneration": "Car Model Generation"
+        }
+    }
+}

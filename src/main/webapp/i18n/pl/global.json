@@ -11,6 +11,7 @@
                 "carConcern": "Car Concern",
                 "carModel": "Car Model",
                 "carModelGeneration": "Car Model Generation",
+                "car": "Car",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span translate="ccmApp.car.detail.title">Car</span> {{vm.car.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="ccmApp.car.name">Name</span></dt>
+        <dd>
+            <span>{{vm.car.name}}</span>
+        </dd>
+        <dt><span translate="ccmApp.car.carConcern">Car Concern</span></dt>
+        <dd>
+            <a ui-sref="car-concern-detail({id:vm.car.carConcern.id})">{{vm.car.carConcern.name}}</a>
+        </dd>
+        <dt><span translate="ccmApp.car.carMake">Car Make</span></dt>
+        <dd>
+            <a ui-sref="car-make-detail({id:vm.car.carMake.id})">{{vm.car.carMake.name}}</a>
+        </dd>
+        <dt><span translate="ccmApp.car.carModel">Car Model</span></dt>
+        <dd>
+            <a ui-sref="car-model-detail({id:vm.car.carModel.id})">{{vm.car.carModel.name}}</a>
+        </dd>
+        <dt><span translate="ccmApp.car.carModelGeneration">Car Model Generation</span></dt>
+        <dd>
+            <a ui-sref="car-model-generation-detail({id:vm.car.carModelGeneration.id})">{{vm.car.carModelGeneration.name}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="car-detail.edit({id:vm.car.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
