@@ -12,7 +12,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface RefuelingRepository extends JpaRepository<Refueling,Long> {
 
-    @Query("select refueling from Refueling refueling where refueling.user.login = ?#{principal.username}")
+    @Query("select refueling from Refueling refueling where refueling.car.owner.login = ?#{principal.username}")
     List<Refueling> findByUserIsCurrentUser();
 
 }

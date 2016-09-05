@@ -42,9 +42,6 @@ public class Refueling implements Serializable {
     private String comment;
 
     @ManyToOne
-    private User user;
-
-    @ManyToOne
     private Car car;
 
     public Long getId() {
@@ -131,19 +128,6 @@ public class Refueling implements Serializable {
 
     public void setComment(String comment) {
         this.comment = comment;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public Refueling user(User user) {
-        this.user = user;
-        return this;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Car getCar() {

@@ -24,28 +24,24 @@
             <column name="date" type="timestamp">
                 <constraints nullable="true" />
             </column>
-            
+
             <column name="milage" type="decimal(10,2)">
                 <constraints nullable="true" />
             </column>
-            
+
             <column name="trip" type="decimal(10,2)">
                 <constraints nullable="true" />
             </column>
-            
+
             <column name="quantity" type="decimal(10,2)">
                 <constraints nullable="true" />
             </column>
-            
+
             <column name="cost" type="decimal(10,2)">
                 <constraints nullable="true" />
             </column>
-            
+
             <column name="comment" type="varchar(255)">
-                <constraints nullable="true" />
-            </column>
-            
-            <column name="user_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 
@@ -56,6 +52,6 @@
             <!-- jhipster-needle-liquibase-add-column - Jhipster will add columns here, do not remove-->
         </createTable>
         <dropDefaultValue tableName="refueling" columnName="date" columnDataType="datetime"/>
-        
+
     </changeSet>
 </databaseChangeLog>

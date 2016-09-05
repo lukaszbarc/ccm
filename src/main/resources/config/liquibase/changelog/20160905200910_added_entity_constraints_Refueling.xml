@@ -7,12 +7,6 @@
         Added the constraints for entity Refueling.
     -->
     <changeSet id="20160905200910-2" author="jhipster">
-        
-        <addForeignKeyConstraint baseColumnNames="user_id"
-                                 baseTableName="refueling"
-                                 constraintName="fk_refueling_user_id"
-                                 referencedColumnNames="id"
-                                 referencedTableName="jhi_user"/>
 
         <addForeignKeyConstraint baseColumnNames="car_id"
                                  baseTableName="refueling"
