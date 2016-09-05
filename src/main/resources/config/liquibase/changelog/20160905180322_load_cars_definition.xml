@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+    <changeSet id="20160905180322" author="lbarc">
+
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/concerns.csv"
+                  separator=";"
+                  tableName="car_concern">
+        </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/makes.csv"
+                  separator=";"
+                  tableName="car_make">
+        </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/models.csv"
+                  separator=";"
+                  tableName="car_model">
+        </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/cars/generations.csv"
+                  separator=";"
+                  tableName="car_model_generation">
+        </loadData>
+
+    </changeSet>
+</databaseChangeLog>
